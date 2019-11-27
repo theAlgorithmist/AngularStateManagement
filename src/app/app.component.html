@@ -1,0 +1,19 @@
+<header>Angular 8 Custom State Management</header>
+
+<div class="padded">User: {{appModel.first}} {{appModel.last}}  Role: {{appModel.role}}</div>
+
+<div class="nav">
+  <span class="nav-option mr10">
+    <a routerLink="path1">Path 1</a> ({{appModel.path1Count}})
+  </span>
+
+  <span class="nav-option mr10">
+    <a routerLink="path2" [state]="{first: appModel.first}">Path 2</a>
+  </span>
+
+  <span class="nav-option">
+    <a routerLink="path3">Path 3</a> ({{appModel.path3Count}})
+  </span>
+</div>
+
+<router-outlet></router-outlet>
