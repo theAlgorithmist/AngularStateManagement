@@ -29,7 +29,7 @@ import {
   RouterModule
 } from '@angular/router';
 
-import { Path2Component  } from "./components/path2-component";
+import { Path2Component  } from "./components/path2.component";
 import { Path2AComponent } from "./components/path2-a.component";
 import { Path2BComponent } from "./components/path2-b.component";
 

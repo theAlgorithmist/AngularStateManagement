@@ -29,8 +29,8 @@ import { NgModule         } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
-import { Path1Component } from "./features/path1/path1-component";
-import { Path3Component } from "./features/path3/path3-component";
+import { Path1Component } from "./features/path1/path1.component";
+import { Path3Component } from "./features/path3/path3.component";
 
 @NgModule({
   declarations: [

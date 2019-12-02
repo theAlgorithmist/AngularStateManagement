@@ -28,8 +28,8 @@ import {
 } from '@angular/router';
 
 // Main App eagerly-loaded components
-import { Path1Component } from "./features/path1/path1-component";
-import { Path3Component } from "./features/path3/path3-component";
+import { Path1Component } from "./features/path1/path1.component";
+import { Path3Component } from "./features/path3/path3.component";
 
 const routes: Routes = [
   {
