@@ -81,6 +81,9 @@ export class Path1Component implements OnInit, OnDestroy
     // In this case, the model is open and most reducers are simple, so they are inlined for convenience and
     // performance.  Reduction, however, can only be tested in terms of directly updating the model.
     if (model !== undefined && model != null) {
+
+      // This var is not an Input with OnPush CD - works since only way to update is after clicking a link;
+      // inject a ChangeDetectorRef and call detectChanges() in general.
       this.showBadge = model.path1Count > 4;
     }
   }

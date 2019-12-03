@@ -48,10 +48,10 @@ export class AppComponent implements OnInit, OnDestroy
 {
   public appModel: IAppModel;                    // Reference to app model for this component
 
-  protected _storeSubscription: Subscription;    // Reference to subscription to model updates
+  private _storeSubscription: Subscription;    // Reference to subscription to model updates
 
-  constructor(protected _modelService: ModelService,
-              protected _http: HttpClient)
+  constructor(private _modelService: ModelService,
+              private _http: HttpClient)
   {
     this._storeSubscription = this._modelService.subscribe( (m: IAppModel) => this.__onModelUpdated(m));
   }
@@ -79,7 +79,7 @@ export class AppComponent implements OnInit, OnDestroy
    *
    * @private
    */
-  protected __onDataLoaded(data: IAppModel): void
+  private __onDataLoaded(data: IAppModel): void
   {
     this._modelService.dispatchAction(appActions.USER, data);
   }
@@ -91,7 +91,7 @@ export class AppComponent implements OnInit, OnDestroy
    *
    * @private
    */
-  protected __onModelUpdated(model: IAppModel): void
+  private __onModelUpdated(model: IAppModel): void
   {
     if (model !== undefined && model != null)
     {
