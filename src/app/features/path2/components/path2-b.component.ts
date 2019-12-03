@@ -75,7 +75,9 @@ export class Path2BComponent implements OnInit, OnDestroy
    */
   protected __onModelUpdated(model: IPath2Model): void
   {
-    if (model !== undefined && model != null) {
+    if (model !== undefined && model != null)
+    {
+      // See Path-1 note about change detection
       this.path2AModel = model;
     }
   }

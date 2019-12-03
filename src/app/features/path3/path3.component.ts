@@ -76,6 +76,8 @@ export class Path3Component implements OnInit, OnDestroy
   protected __onModelUpdated(model: IAppModel): void
   {
     if (model !== undefined && model != null) {
+
+      // See Path 1 comment about change detection
       this.appModel = model;
     }
   }
