@@ -83,7 +83,7 @@ export class Path1Component implements OnInit, OnDestroy
     if (model !== undefined && model != null) {
 
       // This var is not an Input with OnPush CD - works since only way to update is after clicking a link;
-      // inject a ChangeDetectorRef and call detectChanges() in general.
+      // inject a ChangeDetectorRef and call markForCheck() in general.
       this.showBadge = model.path1Count > 4;
     }
   }
