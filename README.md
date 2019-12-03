@@ -1,6 +1,6 @@
 # Angular State Management With BehaviorSubject
 
-This is the code distribution for the Medium Article, _[Angular State Management With BehaviorSubject]()_ .
+This is the code distribution for the Medium Article, _[Angular State Management With BehaviorSubject](https://medium.com/ngconf/angular-state-management-with-behaviorsubject-e33df0456ff8)_ .
 
 This code distribution illustrates the use of _BehaviorSubject_ to create a reactive model that mimics many of the features of _@ngrx/store_.  The primary difference between the popular third-party package and the current approach is an open (and simple) object-based model implemented through an Angular service.  Since the model is open, developers may be as light or as rigorous as desired in handling immutability.  The approach outlined in the supporting article is very lightweight and very fast.  It is, however, not general-purpose.
 
